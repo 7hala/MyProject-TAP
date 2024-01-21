@@ -1,0 +1,451 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+<title>My Portfolio</title>
+
+<style type="text/css">
+
+ body {
+    font-family: Arial, sans-serif;   
+    border: 2px solid #007BFF;          
+ }
+
+ .container {
+     width:100%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-flow: wrap;
+ }
+ 
+ .box1 {
+    width: 50%;
+    height: outo;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+ }
+
+ .box2 {
+    width: 30%;
+    height: 230px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: right;
+ }
+ 
+ .box3 {
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box; 
+ }
+
+ .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 35px 40px 60px 60px;
+    margin: 0px;
+ }
+
+ .nav-list i {
+    margin-right: 5px; 
+ }
+
+ .nav-list a {
+    text-decoration: none;
+    margin: 0 30px 0 10px;
+ }
+
+ h4 {  
+    color: #3BBADB;
+    text-align: left;
+    padding: 15px 0;  
+ }
+        
+ h2 {   
+    color: #008AAA;
+    text-align: left;      
+ }
+
+ p {   
+    text-align: left;   
+ }
+
+ .buttons {
+    text-align: left; 
+    margin-top: 30px;
+ }
+        
+ .btn {
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px 10px 0px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+ }
+        
+ .btn-white {
+    background-color: #fff;
+    color: #008AAA; 
+    border: 2px solid #008AAA; 
+ }
+
+ .btn-blue {
+    background-color: #008AAA ; 
+    color: #fff; 
+    border: 2px solid #008AAA; 
+ }
+
+ .btn:hover {
+    background-color: #555;
+ }
+
+ .hidden-content {
+    display: none;
+ }
+
+ .see-more-link {
+    color: #3BBADB;
+    cursor: pointer;
+    text-decoration: none;
+ }
+
+ .profile-photo {
+    text-align: right; 
+    max-width: 100%; 
+    border-radius: 0 0 0 65%; 
+    padding: 45px 0;
+ }
+
+ @media only screen and (max-width: 730px) {
+    .nav-list {
+       padding-right: 25px;
+    }
+ }
+
+ @media only screen and (max-width: 630px) {
+    .nav-list {
+       padding-right: 20px;
+    }
+ }
+
+@media only screen and (max-width: 550px) {
+    .nav-list {
+       padding-right: 15px;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    .nav-list {
+       padding-right: 5px;
+       padding-top: 30px;
+       display: block;
+    }
+
+    .nav-list a {
+       float: none;
+       display: block;
+       text-align: right;
+       padding-top: 5px;
+    }
+ }
+
+ @media screen and (max-width: 460px) {
+    .nav-list {
+       padding-right: 0px;
+    }
+ }
+
+ @media only screen and (max-width: 432px) {
+    .nav-list {
+       padding-right: 20px;
+    }
+
+    .nav-list i {
+       margin-right: 5px; 
+    }
+
+    .nav-list a {
+       margin: 0 10px;
+    }
+   
+    .profile-photo {
+       padding-top: 50px;
+    }
+ }
+
+ @media only screen and (max-width: 350px) {
+    .nav-list {
+       padding-right: 10px;
+    }
+ }
+
+ @media screen and (max-width: 300px) {
+    .box2 {
+       width: 20%;
+       height: 230px;
+       margin: 20px;
+       box-sizing: border-box;
+    }
+
+    .profile-photo{
+       padding-top: 35px;
+    }
+
+    .nav-list {
+       padding-right: 20px;
+       padding-top: 30px;
+    }
+ }
+
+ @media only screen and (max-width: 286px) {
+    .nav-list {
+       padding: 30px 20px 40px 0px;
+    }
+
+    .box2 {
+       order: 1;
+       width: 20%;
+       height: 30px;
+       margin: 0 40px 50px 40px;
+       box-sizing: border-box;
+    }
+      
+    .box1 {
+       order: 2;
+    }
+ }
+
+ @media only screen and (max-width: 230px) {
+    .nav-list {
+       font-size: 10px;
+       padding-top: 32px;
+    }
+
+    .box1 {
+       font-size: 10px;
+       margin:0px;
+    } 
+    
+    ul {
+       padding-inline-start: 20px;
+    }
+     
+    .btn {
+       padding: 5px 3px;
+       margin: 5px 0px;
+       margin-right: 10px;
+    }
+    
+    .profile-photo{
+       min-width: 30px;
+       height: 45px;
+       padding: 20px 20px 20px 0;
+    }
+
+
+ @media only screen and (max-width: 160px) {
+    .nav-list {
+       font-size: 8px;
+       padding-top: 31px;
+       padding-right: 10px;
+    }
+ 
+    .nav-list i {
+       margin-right: 2px; 
+    }
+    
+    .box1 {
+       font-size: 8px;
+    } 
+    
+    h2 {
+       font-size: 1.2em;
+    }
+    
+    ul {
+       padding-inline-start: 10px;
+    }
+       
+    .profile-photo{
+       min-width: 20px;
+       height: 30px;
+    }
+ }
+
+ @media only screen and (max-width: 116px) {
+    .nav-list a {
+       margin: 0 0px;
+    }
+ }
+
+ @media only screen and (max-width: 110px) {
+   .nav-list {
+      font-size: 8px;
+   }  
+      
+   .box1 {
+      font-size: 6px;
+   }  
+   
+   .box2 {
+      margin-bottom: 30px;
+   }        
+       
+   h2 {
+      font-size: 1.0em;
+   }   
+       
+   ul { 
+      padding-inline-start: 10px;
+   }    
+       
+   .profile-photo{
+      min-width: 10px;
+      height: 15px;
+   }
+ }
+ 
+ @media only screen and (max-width: 100px) {
+    .nav-list {
+       font-size: 6px;
+       padding-right: 10px;
+       padding-top: 32px;
+    }
+     
+    .nav-list a {
+       margin: 0 5px;
+    }
+           
+    .box1 {
+       font-size: 4px;
+    } 
+     
+    h2 {
+       font-size: 0.9em;
+    }
+     
+    ul {
+       padding-inline-start: 3px;
+    }
+ }
+
+ @media only screen and (max-width: 83px) {
+    .nav-list {
+       padding-right: 5px;
+    }
+ }
+
+ @media only screen and (max-width: 75px) {
+    .nav-list {
+       font-size: 4px;
+    }
+ }
+
+ @media only screen and (max-width: 62px) {
+    .nav-list {
+       padding-right: 0px;
+    }
+ }
+
+ @media only screen and (max-width: 56px) {
+    .nav-list {
+       font-size: 3px;
+    }   
+        
+    .box1 {
+       font-size: 3px;
+    }
+     
+    ul {
+       padding-inline-start: 2px;
+    }
+ }
+</style>
+<body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+     var hiddenContent = document.getElementById('hiddenContent');
+     var seeMoreLink = document.getElementById('seeMoreLink');
+
+     seeMoreLink.addEventListener('click', function () {
+        if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
+            hiddenContent.style.display = 'block';
+            seeMoreLink.textContent = 'See Less';
+        } else {
+            hiddenContent.style.display = 'none';
+            seeMoreLink.textContent = 'See More..';
+        }
+     });
+  });
+</script>
+
+<div class="box3">
+   <ul class="nav-list" >
+      <li><a style="color: #D1884F" href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a style="color: black" href="#"><i class="fas fa-user"></i> About Me</a></li>
+      <li><a style="color: black" href="#"><i class="fas fa-phone"></i> Contact Me</a></li>
+   </ul>
+</div>
+     
+<div class="container">
+    <div class="box1" >
+       <h4>Welcome to my site</h4>
+       <h2>Hello! I'm Hala kmail, Computer Systems Engineering.</h2>
+    
+       <p>I graduated from the Arab American University in 2021, with a 
+               bachelor's degree in computer systems engineering. I aspire to develop
+               myself more and more in software engineering, and I am focousing on studying 
+               back-end and front-end software.<a href="#" id="seeMoreLink" class="see-more-link">See More..</a>
+
+       <div class="hidden-content" id="hiddenContent">
+                 <p> I have good knowledge in DB and SQL queries. Also, 
+                 I have experience in many programming languages ​​such as: 
+                 <ul><li>C++</li> <li>JAVA</li> <li>Python</li> <li>Assembly Programming</li>
+                 <li>Node.js</li> <li>CSS, HTML, XML and JavaScript</li> <li>Android Development</li> 
+                 <li>APIs Development</li> <li>Object Oriented skills, Data Structure skills</li> 
+                 <li>Validation and Verification Software</li><li>Linux</li> <li>Digital Logic Design</li>
+                 <li>Algorithms Analysis and Design</li> <li>Project Management</li> <li>AutoCAD, 
+                 Packet Tracer, Rational Rose, Quartus Prime</li> <li>Microsoft Office</li> <li>Networks</li></ul><br> 
+                 Also, I successfully create a mobile application "Voice to Sign Language Translator" as my graduation
+                 project. In this application the user can enter the text or even record a voice with the words he wants
+                 and directly, then this speech will be converted into a sign language that is displayed to the
+                 deaf and dump person with an animation character. So this application enables the community to 
+                 communicate with deaf and dumb in their usual language without feeling any difference. To achieve
+                 this application, i used Android Studio, Firebase, Voice Recognition and Animation.<br>
+
+                 In other side, I participant in many training, some of this:
+                 <ul><li> Participant in a training course of 30 training and practical hours, in Python Programming
+                 implemented between Ministry of Telecom & IT and Purpose for Smart Education | July 2020</li>
+                 <li> I have successfully completed the Full Stack Development Track in Udacity | Jan 2022</li>
+                 <li> I trained for 300 hours on how to make apps server-side from scratch at Blitz company–Jenin
+                 | 27th Mar – 1st Jul 2021</li></ul><br>
+
+                 There are my contact information:<ul>
+                 <li><a style="text-decoration: none; color: #3BBADB "; href="mailto:halakmail1998@gmail.com">Gmail</a></li>
+                 <li><a style="text-decoration: none; color: #3BBADB "; href="http://linkedin.com/in/hala-kmail-05b660142">Linkedin</a></li></ul> 
+                 </p>
+         </div>
+
+         <div class="buttons">
+                 <a href="#" class="btn btn-blue">Hire me!</a>
+                 <a href="#" class="btn btn-white">See My Project</a>
+         </div>
+
+    </div>
+    <div class="box2" >
+       <img src="tap.jpg" alt="sorry image not found" class="profile-photo">
+    </div>
+</div>
+<script src="script.js"></script>        
+    
+</body>
+</html>
